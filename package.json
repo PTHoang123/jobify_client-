@@ -1,0 +1,41 @@
+{
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "concurrently": "^7.6.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "eslint-plugin-react-hooks": "^5.0.0-next-5379b6123-20230105",
+    "express": "^4.18.2",
+    "http-status-codes": "^2.2.0",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.29.4",
+    "mongodb": "^4.12.0",
+    "mongoose": "^6.7.2",
+    "morgan": "^1.10.0",
+    "net": "^1.0.2",
+    "normalize.css": "^8.0.1",
+    "path-browserify": "^1.0.1",
+    "stream-http": "^3.2.0",
+    "url": "^0.11.0",
+    "validator": "^13.7.0"
+  },
+  "name": "mearn",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "server": "nodemon index --ignore client",
+    "client": "npm start --prefix client",
+    "start": "concurrently kill-others-one-fail \"npm run server\" \"npm run client\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@webpack-cli/generators": "^3.0.1",
+    "express-async-errors": "^3.1.1",
+    "nodemon": "^2.0.20",
+    "webpack-cli": "^5.0.1"
+  }
+}
